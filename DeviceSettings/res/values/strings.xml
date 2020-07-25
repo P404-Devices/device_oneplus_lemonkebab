@@ -31,6 +31,11 @@
     <string name="dc_mode_title">DC-Dimming</string>
     <string name="tile_dc_mode">DC-Dimming</string>
 
+    <!-- Doze -->
+    <string name="doze_panel_title">Doze</string>
+    <string name="doze_settings_title">Advanced doze settings</string>
+    <string name="doze_settings_summary">Handle sensor related wake events</string>
+
     <!-- Dolby -->
     <string name="dolby_category">Dolby</string>
     <string name="dolby_title">Dolby Atmos</string>
