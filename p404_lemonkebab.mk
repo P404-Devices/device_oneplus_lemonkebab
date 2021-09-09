@@ -23,6 +23,8 @@ $(call inherit-product, device/oneplus/lemonkebab/device.mk)
 
 # Inherit some common PixelExperience stuff.
 $(call inherit-product, vendor/404/configs/common.mk)
+$(call inherit-product, vendor/google/pixel/config.mk)
+$(call inherit-product, vendor/google/gms/config.mk)
 
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
