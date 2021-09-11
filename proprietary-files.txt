@@ -452,11 +452,11 @@ system_ext/etc/sysconfig/config-com.dolby.daxservice.xml|7690774632fe32269657fc1
 system_ext/etc/sysconfig/hiddenapi-com.dolby.daxservice.xml|f647356bd3a4bb4174e873e4544c2921d51fd4d2
 vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|71fa551fc9690007113e9962129ca965a426dd35
 vendor/etc/media_codecs_dolby_audio.xml|8964c37503282a1430fec616b4c873ec786f3ce0
-vendor/etc/dolby/dax-default.xml|5cc5d511e942db26039c65db6bf42fa6740130a6
+vendor/etc/dolby/dax-default.xml|1703e8b78120915db7efe4e0fd6348db39172393
 vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|8680d91c743c6cbb22c97594ebee0f11847ca3ad
 vendor/lib/libdapparamstorage.so|98e3c70e8081d25afb75da1fe7718bce9217418b
 vendor/lib/libdeccfg.so|f5b4f08095a0abd995ad74306bff1f5079c93452
-vendor/lib/libqtigef.so|3b16e7a1f312fd5715bd78a17472794c4ae9e362
+vendor/lib/libqtigef.so|d2e8b296db9d8ff19051858ee1a0143e06c69df3
 vendor/lib/libstagefright_soft_ac4dec.so|85bd345d9a13a50924e7e5953c6b9a90bfd0d574
 vendor/lib/libstagefright_soft_ddpdec.so|efc0fce90f9f56cda4f47d78f5c67dc3279006bd
 vendor/lib/libstagefrightdolby.so|0fda0f8ba3657ee81fe4a315ef9e4056a13c37b3
@@ -808,12 +808,12 @@ vendor/lib/liblistensoundmodel2.so|84e223306f702d2093110e776417503d7cc6d08e
 vendor/lib/libmulawdec.so|53257dee0befc2a353ceb84a906a680a33d745f1
 vendor/lib/libsmwrapper.so|f2bfc4433707b8c3a6855fa0fe0048c814091c39
 
-# Media - from LA.UM.9.12.r1-10800-SMxx50.0 
-system_ext/lib/libmmosal.so|175c890c965a14043777000cd2cfc20264b04810
-system_ext/lib/libmmparser_lite.so|078224d83480b7f69eb30e0d036e24fa3fb0e37a
-system_ext/lib64/libmmosal.so|378098a961e465b5d14a29f5bc2320e10c88580c
-vendor/etc/system_properties.xml|1fef83105060b01a95a790f1504e58adb1df44f1
-vendor/lib64/libmmosal.so|cb5c9b587d00db631f1659816499d3f92b2af050
+# Media - from pstar msi_prc-user-11-RRAA31.Q3-19-33-1-d699dd-release-keys
+system_ext/lib/libmmosal.so|d6fabd9084c804d0077e7c0e820cb76eae759479
+system_ext/lib/libmmparser_lite.so|c4b7d2e43a3d8e52e32edfcc54fd2fcb36f67e13
+system_ext/lib64/libmmosal.so|a8021c7c2b2a0b9a34b3e75ef746247daaf5185f
+vendor/etc/system_properties.xml|f859685e7d871600942a38231dd15f7a09d0562b
+vendor/lib64/libmmosal.so|6035b5e609a97157a31f12ec601fc3ae60f31e36
 
 # Neural networks - from LA.UM.9.12.r1-10800-SMxx50.0 
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti|75e47fdc6d4cabb01ca4f38682e20453d20abdc0
@@ -861,51 +861,51 @@ vendor/lib64/nfc_nci.nqx.default.hw.so
 vendor/lib64/se_nq_extn_client.so
 vendor/lib64/vendor.nxp.hardware.nfc@2.0.so
 
-# OMX - from LA.UM.9.12.r1-10800-SMxx50.0 
-vendor/lib/libAlacSwDec.so|e49062c9fd9377e8264bf8f7901394653b9f02dc
-vendor/lib/libApeSwDec.so|f14f08a55b32cc252417e3970b1d2cb296d48fa0
-vendor/lib/libdsd2pcm.so|427be2997fcd72e94c33d08b2cf1fde5bf969fd4
-vendor/lib/libFlacSwDec.so|bba6d4155029b2fd1a3d2dfe9f75f422f0d8a35e
-vendor/lib/libMpeg4SwEncoder.so|f379fe815b0271051ed08fba9916a1d058f5949d
-vendor/lib/libOmxAacDec.so|116c3c2d22cb8eb4f9235209788d3104ad596c6f
-vendor/lib/libOmxAlacDec.so|1e4c5ee8b8d9505365e5c0929621c52380c11b56
-vendor/lib/libOmxAlacDecSw.so|9c455d01e8f3f8663c464b9980e57ad735959529
-vendor/lib/libOmxAmrDec.so|f070981b5d8da4672de19b994d509a35d6d31e19
-vendor/lib/libOmxAmrwbplusDec.so|655214a663040b5dd74961622c553c8aa9957d0b
-vendor/lib/libOmxApeDec.so|18175f40a2f4ff5af871eeaa305bf99f84379b85
-vendor/lib/libOmxApeDecSw.so|281c7f2ea570dab8d1ae73a385b62ad015a6dbf9
-vendor/lib/libOmxDsdDec.so|2ed9ab0f0768c8cfd223762e09fb73a4e92423b0
-vendor/lib/libOmxEvrcDec.so|a5985837c956cf36d7cacf9daac207b33d055054
-vendor/lib/libOmxG711Dec.so|2db1bcb7866af993a3f2b25af8afce412b47a41c
-vendor/lib/libOmxMpeghDecSw.so|59c671b0e7efc4c4d8f25c22d6a3e4a96a961ccb
-vendor/lib/libOmxMpeghEncSw.so|b22929c22dbccdc9e8a5fd4f7ae11412c562fa5d
-vendor/lib/libOmxQcelp13Dec.so|c0eecaf25f0e3727ecc906e9d4e09c04fac3bd18
-vendor/lib/libOmxSwVdec.so|e10e118b6ffaa10bb81d98096fa9824fb4fab13d
-vendor/lib/libOmxSwVencMpeg4.so|309b78adc1491b470201950a4162ae073b4fcd7f
-vendor/lib/libOmxVideoDSMode.so|3758ecd4475ad0849cf61d56140cdd69826b9502
-vendor/lib/libOmxVpp.so|586199ee88b9322d97f0b51ea92b6977fc7ddfa2
-vendor/lib/libOmxWmaDec.so|228d26f983dcd9e1ca3d7d99a899d53b1d026b67
-vendor/lib/libswvdec.so|55b866c216a4ef5e716450c90c3fe683c0324d21
-vendor/lib64/libAlacSwDec.so|554201134696c34e29839f6da56834814683a796
-vendor/lib64/libApeSwDec.so|9f4ba1f73fbe53b480a7b3d3068b6bca3997e6ff
-vendor/lib64/libFlacSwDec.so|7f7e66ac6dd858f6b4304959b14f7d1caca95960
-vendor/lib64/libMpeg4SwEncoder.so|1eb2dc24730e225222b5fd1b967d1f5838a42196
-vendor/lib64/libOmxAacDec.so|47496364606e45af16db08e40c497bda3f7faa6c
-vendor/lib64/libOmxAlacDec.so|8e6fd9555ec9513477f37230704f252564d0a9eb
-vendor/lib64/libOmxAlacDecSw.so|4a8738e89ce8bc67a73b07d77ae8f3c1fbb0d8ee
-vendor/lib64/libOmxAmrDec.so|04a0bc99209cf615645d9b6af0d42fa03d6fabea
-vendor/lib64/libOmxAmrwbplusDec.so|c8cbed6d997eb1c5b1949d90c75c6ba48252973f
-vendor/lib64/libOmxApeDec.so|1e1bd153fbbf38cb8a44325df532f9c22a7e6c55
-vendor/lib64/libOmxApeDecSw.so|301863da91a24b19d9a411c47d7689da76f15359
-vendor/lib64/libOmxEvrcDec.so|22d43b0428519728e083f5b729a24cbada1d0905
-vendor/lib64/libOmxG711Dec.so|6dd460157666fbf16291b6af83af573626976ba7
-vendor/lib64/libOmxMpeghEncSw.so|d38f7ec703944eb232a9bb13975cd07c209ae98b
-vendor/lib64/libOmxQcelp13Dec.so|60eca84008abc811468e1fc0e3e4259aa1293748
-vendor/lib64/libOmxSwVdec.so|698c0614e364bfa7fb9592ed175d5b5286afc7ef
-vendor/lib64/libOmxSwVencMpeg4.so|94e276223bcb6350defbed2c1341edaf825b0315
-vendor/lib64/libOmxVpp.so|b5bfbf559cccf33e0f70e5c0fdb962c0e1b90206
-vendor/lib64/libOmxWmaDec.so|6c65d02f59ea10ef263f40dfcbb0d77a9d5021fd
-vendor/lib64/libswvdec.so|ff848e5234baf0f7bd72f92c15d6ec77faa54fb3
+# OMX - from pstar msi_prc-user-11-RRAA31.Q3-19-33-1-d699dd-release-keys
+vendor/lib/libAlacSwDec.so|1d074a0415ee358cd13c981e35266cff4c6863ce
+vendor/lib/libApeSwDec.so|ce425ef9372ed6635e313422b3578f77b90ff526
+vendor/lib/libdsd2pcm.so|c5ab1afd7a5a23bf83d80b5ac74247c3dd2085af
+vendor/lib/libFlacSwDec.so|01c7a51d93c2fe447e23c1210832b39b171393e3
+vendor/lib/libMpeg4SwEncoder.so|d3ac395fc364ae5d0003f1f787f76b8ee9ad5968
+vendor/lib/libOmxAacDec.so|83cb8e710ba472025ba9491f221887c146f99a2c
+vendor/lib/libOmxAlacDec.so|f1a3fba8a593241fc8f9bdcc935347b57ba511c1
+vendor/lib/libOmxAlacDecSw.so|150f1fee193918792a88797766ddf12d1a388efd
+vendor/lib/libOmxAmrDec.so|c9900446de3b8d0808b5d8bf1729f0a3338096dc
+vendor/lib/libOmxAmrwbplusDec.so|eeac5a59ca69e03d20ff6d31fd25825c4ab86bfb
+vendor/lib/libOmxApeDec.so|c215fdce163982224af7acc7faef01a62459d03e
+vendor/lib/libOmxApeDecSw.so|f3e64e54808f57f146173532335ea45db1fb54f4
+vendor/lib/libOmxDsdDec.so|f74936badeb8303b2bb17475b9cd157b1c81131c
+vendor/lib/libOmxEvrcDec.so|827e34f3068a733c39772d46f3757e42e21975c9
+vendor/lib/libOmxG711Dec.so|b0650d0c0c8db5473f3ebb957fafb76857d92d3c
+vendor/lib/libOmxMpeghDecSw.so|ec57b1a9572dd535023bbfd8e5d179caf306418b
+vendor/lib/libOmxMpeghEncSw.so|7ea10eea872ab2315f9dcf40a774853d9237ebc1
+vendor/lib/libOmxQcelp13Dec.so|44698fe731f52e64f4646c6262c9b4adba3d807b
+vendor/lib/libOmxSwVdec.so|46f0c55b30f48fdc719710dc927ba15195041792
+vendor/lib/libOmxSwVencMpeg4.so|497aa290ed29d26f1129f5d928a21a46b01864b5
+vendor/lib/libOmxVideoDSMode.so|0771a2c2f34dc484f9b0b3625dd0a40361dec060
+vendor/lib/libOmxVpp.so|bf4ff1dca312814cd4f8de465a5a6af099f29910
+vendor/lib/libOmxWmaDec.so|db161e70da762cd40e743a6ddb03ff4ed0a6e7bb
+vendor/lib/libswvdec.so|7d269da9b5b9b2f5e4ee3ce3b68e3725ce012ef0
+vendor/lib64/libAlacSwDec.so|345c43493c529a4075b9637f8140adcd33043aef
+vendor/lib64/libApeSwDec.so|efac4ae01cd425577c704d06704b00970d324167
+vendor/lib64/libFlacSwDec.so|68996ead82be37a00946da626be705acb31848de
+vendor/lib64/libMpeg4SwEncoder.so|40d8eed5d93872d4f453c0bdd562ada091046a04
+vendor/lib64/libOmxAacDec.so|15c532ee9998753193fe7caa60eebd3a58ed90bf
+vendor/lib64/libOmxAlacDec.so|9bbfe179cff49a81e82362b3082d30389a3a63dc
+vendor/lib64/libOmxAlacDecSw.so|2174f226c15ff15558bbfaab559f6542fcd784ab
+vendor/lib64/libOmxAmrDec.so|9f172520da87f99d3d4e0aa2ea2225d496371d95
+vendor/lib64/libOmxAmrwbplusDec.so|af45eefbc621fae53dc7fa4d633da4224056907f
+vendor/lib64/libOmxApeDec.so|bb655d3b495240e41a542b1ecc4ab522aed287da
+vendor/lib64/libOmxApeDecSw.so|76741dbc4de400163e692817d200ae02ab72f85e
+vendor/lib64/libOmxEvrcDec.so|a793c523f124535ae7591fe76ca6f2eba3f38d8f
+vendor/lib64/libOmxG711Dec.so|ccafab0e629518304f606fcf61382bd829e100be
+vendor/lib64/libOmxMpeghEncSw.so|b7c9db846385f6431c3e488082c68f3488517860
+vendor/lib64/libOmxQcelp13Dec.so|d3d11987b8dc3c6605ed79b7f34537a325dfbf79
+vendor/lib64/libOmxSwVdec.so|06446ba69a2adc65d00b9bbffdeaac9873f1fc53
+vendor/lib64/libOmxSwVencMpeg4.so|9422ac269b8c276e3c7ac78ae3ef3a73bc006551
+vendor/lib64/libOmxVpp.so|c62377932a30c234bd5f41829d416e9e05cbe7de
+vendor/lib64/libOmxWmaDec.so|cd75236444f762cff1702f46cc36e5a230ec3b85
+vendor/lib64/libswvdec.so|e50cc714152873d4fdcabd3ed1bbf9e635725b78
 
 # OPFeature
 vendor/bin/opf-service
@@ -919,7 +919,6 @@ vendor/lib64/libspcom.so|2c94581e2645034cfa25b4752eff450c65e1b9d5
 
 # Power-off alarm - from LA.UM.9.12.r1-10800-SMxx50.0
 -product/app/PowerOffAlarm/PowerOffAlarm.apk|bc906abd03e4a243201dde626b6580fd8a4f73ce
-system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar|6508f5708221399eb8bd9754dc49bad32a911e27
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|c3d1e677118b6ca1684b8a529ee07cc3d91276fa
 vendor/bin/power_off_alarm|e36ed077d45f0cb9368575c7a7e79f0292d51eaa
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|a03a9a1c818595b19272ea6ffb466e23a7fc3b05
@@ -1271,23 +1270,23 @@ vendor/lib64/libssc_default_listener.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
-# Snapdragon Computer Vision Engine - from LA.UM.9.12.r1-10800-SMxx50.0
-vendor/lib/libfastcvdsp_stub.so|6ccfd797a035075db44aaf288a87d1eb041288b7
--vendor/lib/libfastcvopt.so|69d9404ae1e1de6ee72e24ce548b196b04f87da8
-vendor/lib/libscveCommon.so|7197212884b6e49f243ad3f50b94f76a6812020d
-vendor/lib/libscveCommon_stub.so|8e9857589753a7a0402cdedc36e1275d396b394f
-vendor/lib/libscveObjectSegmentation.so|c5c151f6c0006ffa1115c2d94cfbb4f66a6f3184
-vendor/lib/libscveObjectSegmentation_stub.so|d6c091d7076be16127912458f2eacf1f30a14653
-vendor/lib/libscveObjectTracker.so|8efe841c23d9b1565c4c2799ae408a2f6778eb72
-vendor/lib/libscveObjectTracker_stub.so|94f5f8e76146d6d1ddba875f4b2657bc981c7eb8
-vendor/lib64/libfastcvdsp_stub.so|d267ea12eb2f38c58a4a009741d21b2bcccac5fa
--vendor/lib64/libfastcvopt.so|d2d44ae05d652707049671c18961ba66e09ef393
-vendor/lib64/libscveCommon.so|d8c190c20a676883b84ba0cafb5ebf0aa2502e9d
-vendor/lib64/libscveCommon_stub.so|60013976d7bb226021090aa5d436865dd1546857
-vendor/lib64/libscveObjectSegmentation.so|b3185b5710e47b1503ee407dbb6db5e4c712e5dd
-vendor/lib64/libscveObjectSegmentation_stub.so|4cb0485425d951f07ffb51c5bcf68de8183b4950
-vendor/lib64/libscveObjectTracker.so|506ba33a0b3efc4f599ac4dc9a6929c9731aeb3e
-vendor/lib64/libscveObjectTracker_stub.so|16ed76c72244495d791f2cafcde4543b98bb9e87
+# Snapdragon Computer Vision Engine - from pstar msi_prc-user-11-RRAA31.Q3-19-33-1-d699dd-release-keys
+vendor/lib/libfastcvdsp_stub.so|7f27cee24281bc9bf4f08c6100cc66bd650d8efb
+-vendor/lib/libfastcvopt.so|92d28447ad22c0703235652a3feec168ba4dbd04
+vendor/lib/libscveCommon.so|4be56b846f71f4ba8032471abf9f02dc5b01810c
+vendor/lib/libscveCommon_stub.so|879770a420e4ff700706071b5f5c2f8d1a6ae21d
+vendor/lib/libscveObjectSegmentation.so|b60b43377262ef6cc7882ff5cc49d35e4c516670
+vendor/lib/libscveObjectSegmentation_stub.so|6bbd2c8d019629d0817a7da5a594677c75d0c3c5
+vendor/lib/libscveObjectTracker.so|26318c862d3d56596fe7208ebcc3ae1900f7d55f
+vendor/lib/libscveObjectTracker_stub.so|cafdeed8fa0d51672806038065cf4ce38d442b6b
+vendor/lib64/libfastcvdsp_stub.so|9813b36faa8029bdb358126c2996207fc7704d32
+-vendor/lib64/libfastcvopt.so|479d0a3142becb3c5f4118ccc0e01ca665686061
+vendor/lib64/libscveCommon.so|237b6432dfb9d7b6ac5d5522591db0972755bb5b
+vendor/lib64/libscveCommon_stub.so|9578bf81e23aea6f14c8c256ce6ba3244a6b65df
+vendor/lib64/libscveObjectSegmentation.so|2fea995b4481d61dd1076fd429cef03f726a3f28
+vendor/lib64/libscveObjectSegmentation_stub.so|cc49196a5fe38f77f397405c29bc294f327f4cb4
+vendor/lib64/libscveObjectTracker.so|979969ca456c7f643aaa4051d50b1a166f69b025
+vendor/lib64/libscveObjectTracker_stub.so|62db08e185e915fe975e5234d1ce1d749e6e9750
 
 # Soter - from LA.UM.9.12.r1-10800-SMxx50.0
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service|a6ea6031c27889797b96fe29ba100924b79fe3fb
@@ -1466,24 +1465,24 @@ vendor/firmware/Version_Alert_RTP.bin
 vendor/firmware/VZW_Alrwave_RTP.bin
 vendor/firmware/wentai24k_rtp.bin
 
-# VPP - from LA.UM.9.12.r1-10800-SMxx50.0
-vendor/bin/vppservice|65afdb036ea297d52beaa8243413d43f629274b2
+# VPP - from pstar msi_prc-user-11-RRAA31.Q3-19-33-1-d699dd-release-keys
+vendor/bin/vppservice|1b01c2691bf94f06e0c63568f3ad5d1285277d48
 vendor/etc/configstore/vpp.configstore.xml|ed961545186c66fd9523f25866c74f2e11ee63d7
 vendor/etc/init/vppservice.rc|24c089e0e413cbb3fa6daaf0af4215870bdf1b8e
-vendor/lib/libvppclient.so|1cb766ec54a015545449f184f366a3ea5e0ad85e
-vendor/lib/libvpphcp.so|fa29ae38a822d2048383b6bc23fc0d731a566e39
-vendor/lib/libvpphvx.so|b1ab881c0d8ae2bf4c2132d31ee27debfeb2dafe
-vendor/lib/libvpplibrary.so|dfacc188a3261d951074f8cb0c980a136d625f6c
-vendor/lib/vendor.qti.hardware.vpp@1.1.so|8df356bc93951b2072590ff17c5d7af08b4e8299
-vendor/lib/vendor.qti.hardware.vpp@1.2.so|edd5e3b33c51c31c8e9e54912269e893c4e3c730
-vendor/lib/vendor.qti.hardware.vpp@1.3.so|5daf9c261188ca05696002622509756d079177ca
-vendor/lib64/libvppclient.so|2b1a69035a5e9ef9c97e626cf9b3cd4e5028b991
-vendor/lib64/libvpphcp.so|45fa18d78a0d858cf5bca39f30f01ad882ba2cdb
-vendor/lib64/libvpphvx.so|ab2acdba4e6f23cd0b2ef2bc760ff1396fff7101
-vendor/lib64/libvpplibrary.so|3e9fb4b88c3b6ffe51a8b01d7db59469897c9f15
-vendor/lib64/vendor.qti.hardware.vpp@1.1.so|33421558f4dc89fac854f8fd1ac40a5f07c05ebf
-vendor/lib64/vendor.qti.hardware.vpp@1.2.so|a75d4e178b22b228d608bb7c69f7b682a314f80d
-vendor/lib64/vendor.qti.hardware.vpp@1.3.so|ed646bb97e780092d2993d6ecb9525cd9efa28ba
+vendor/lib/libvppclient.so|9d73b279798ed92f191920b1fb50f908fa6c6b88
+vendor/lib/libvpphcp.so|eae028e7d09dad3dcc1d95b3c7b057b5a7c14da7
+vendor/lib/libvpphvx.so|353f3d77eb9d55e130b0ebd8a77a1772180666c6
+vendor/lib/libvpplibrary.so|80e4fd2cc4767531b8aa9ce497694b0b227aaec2
+vendor/lib/vendor.qti.hardware.vpp@1.1.so|b202eafce89217597a45dd424a0dbf1353f71170
+vendor/lib/vendor.qti.hardware.vpp@1.2.so|e5e0e403960db22f6c73479f6aaed73823153156
+vendor/lib/vendor.qti.hardware.vpp@1.3.so|d4babe496cbfcd3ab6e5ffb8f132b1ceb309be2c
+vendor/lib64/libvppclient.so|635cb6fadfe97cca0f4c43abc6c7b358d645ff72
+vendor/lib64/libvpphcp.so|7fd74603c18b2e703117924e12a8e158aca1fa11
+vendor/lib64/libvpphvx.so|04a5377edeac4cc0e0e23ca49d056c99de9744d9
+vendor/lib64/libvpplibrary.so|e33a2afea91fe325904fc9bb99a8d573c8309cc7
+vendor/lib64/vendor.qti.hardware.vpp@1.1.so|1c46b47efa2eba717de65d726db75eaa11be4496
+vendor/lib64/vendor.qti.hardware.vpp@1.2.so|1b4bfb8ef17ea5696cfb35de7215a2a993fe7d9c
+vendor/lib64/vendor.qti.hardware.vpp@1.3.so|f178ca6fceed592c62facc66d7f4ba555a02011b
 
 # Widevine DRM
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
