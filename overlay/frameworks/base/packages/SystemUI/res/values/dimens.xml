@@ -36,4 +36,6 @@
 
     <!-- How much into a DisplayCutout's bounds we can go, on each side -->
     <dimen name="display_cutout_margin_consumption">68px</dimen>
+
+    <dimen name="keyguard_indication_margin_bottom">40dp</dimen>
 </resources>
